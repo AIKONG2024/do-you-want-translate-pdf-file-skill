@@ -6,8 +6,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "pdf-translate" / "scripts" / "pdf_translate.py"
-VALIDATE = ROOT / "pdf-translate" / "scripts" / "validate_outputs.py"
+SCRIPT = ROOT / "do-you-want-translate-pdf-file-skill" / "scripts" / "pdf_translate.py"
+VALIDATE = ROOT / "do-you-want-translate-pdf-file-skill" / "scripts" / "validate_outputs.py"
 
 
 def _write_minimal_pdf(path: Path) -> None:

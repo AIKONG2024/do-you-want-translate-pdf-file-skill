@@ -1,4 +1,3 @@
-display_name: PDF Translate
+display_name: Do You Want Translate PDF File Skill
 short_description: Translate PDFs with layout preservation using pdf2zh.
 default_prompt: Translate this PDF while preserving layout and provide the final PDF.
-

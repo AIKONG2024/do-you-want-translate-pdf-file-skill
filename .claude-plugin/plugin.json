@@ -1,14 +1,14 @@
 {
-  "name": "pdf-translate-skill",
+  "name": "do-you-want-translate-pdf-file-skill",
   "description": "Agent skill for translating text-based PDFs with layout preservation using the official pdf2zh CLI from PDFMathTranslate",
   "version": "0.1.0",
   "author": {
     "name": "AIKONG2024"
   },
-  "homepage": "https://github.com/AIKONG2024/pdf-translate-skill",
-  "repository": "https://github.com/AIKONG2024/pdf-translate-skill",
+  "homepage": "https://github.com/AIKONG2024/do-you-want-translate-pdf-file-skill",
+  "repository": "https://github.com/AIKONG2024/do-you-want-translate-pdf-file-skill",
   "license": "MIT",
   "skills": [
-    "./pdf-translate"
+    "./do-you-want-translate-pdf-file-skill"
   ]
 }

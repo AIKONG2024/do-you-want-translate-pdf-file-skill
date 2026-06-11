@@ -1,4 +1,4 @@
-# pdf-translate-skill
+# do-you-want-translate-pdf-file-skill
 
 [KOREAN](README.ko.md)
 
@@ -17,7 +17,7 @@ Agent skill for translating PDFs while preserving layout as much as the selected
 Ask your agent:
 
 ```text
-Set up the AIKONG2024/pdf-translate-skill skill.
+Set up the AIKONG2024/do-you-want-translate-pdf-file-skill skill.
 ```
 
 ### Agent
@@ -25,33 +25,33 @@ Set up the AIKONG2024/pdf-translate-skill skill.
 <details>
 <summary>Open install instructions</summary>
 
-Read this repository and install the `pdf-translate` skill into the skill directory used by the current agent runtime.
+Read this repository and install the `do-you-want-translate-pdf-file-skill` skill into the skill directory used by the current agent runtime.
 
 The skill folder to install is:
 
 ```text
-pdf-translate/
+do-you-want-translate-pdf-file-skill/
 ```
 
 The installed skill must include:
 
 ```text
-pdf-translate/SKILL.md
-pdf-translate/scripts/
-pdf-translate/references/
-pdf-translate/agents/
+do-you-want-translate-pdf-file-skill/SKILL.md
+do-you-want-translate-pdf-file-skill/scripts/
+do-you-want-translate-pdf-file-skill/references/
+do-you-want-translate-pdf-file-skill/agents/
 ```
 
 Use the installation method supported by the current runtime:
 
-- If the runtime supports GitHub skill installation, install `AIKONG2024/pdf-translate-skill` with path `pdf-translate`.
+- If the runtime supports GitHub skill installation, install `AIKONG2024/do-you-want-translate-pdf-file-skill` with path `do-you-want-translate-pdf-file-skill`.
 - If the runtime supports the `skills` CLI, use:
 
 ```bash
-npx --yes skills add https://github.com/AIKONG2024/pdf-translate-skill --all -g
+npx --yes skills add https://github.com/AIKONG2024/do-you-want-translate-pdf-file-skill --all -g
 ```
 
-- If the runtime only supports manual local skills, copy the `pdf-translate/` folder into that runtime's skill directory.
+- If the runtime only supports manual local skills, copy the `do-you-want-translate-pdf-file-skill/` folder into that runtime's skill directory.
 
 After installing the skill, check the runtime dependency:
 
