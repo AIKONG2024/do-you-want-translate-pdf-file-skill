@@ -1,5 +1,7 @@
 # pdf-translate-skill
 
+[KOREAN](README.ko.md)
+
 Agent skill for translating PDFs while preserving layout as much as the selected engine allows.
 
 - Works with Codex, Claude Code, and agents-compatible runtimes
