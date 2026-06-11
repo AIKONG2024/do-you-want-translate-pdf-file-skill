@@ -19,14 +19,14 @@ Read this repository's install guide and install the pdf-translate skill globall
 Use one installer command:
 
 ```bash
-npx --yes skills add https://github.com/<owner>/pdf-translate-skill --all -g
+npx --yes skills add https://github.com/AIKONG2024/pdf-translate-skill --all -g
 ```
 
 Equivalent runners:
 
 ```bash
-pnpm dlx skills add https://github.com/<owner>/pdf-translate-skill --all -g
-bunx skills add https://github.com/<owner>/pdf-translate-skill --all -g
+pnpm dlx skills add https://github.com/AIKONG2024/pdf-translate-skill --all -g
+bunx skills add https://github.com/AIKONG2024/pdf-translate-skill --all -g
 ```
 
 ## Local Repository Test
