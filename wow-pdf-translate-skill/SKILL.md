@@ -1,9 +1,9 @@
 ---
-name: do-you-want-translate-pdf-file-skill
+name: wow-pdf-translate-skill
 description: Translate text-based PDFs while preserving layout as much as possible using the official pdf2zh CLI from PDFMathTranslate. Use when the user asks to translate a PDF, keep PDF layout, produce a translated PDF, choose a PDF translation provider, or validate PDF translation output.
 ---
 
-# Do You Want Translate PDF File Skill
+# Wow PDF Translate Skill
 
 ## What This Skill Does
 
@@ -88,13 +88,13 @@ If global installation is blocked, use an approved local executable and set `PDF
 Use the helper:
 
 ```bash
-python do-you-want-translate-pdf-file-skill/scripts/pdf_translate.py input.pdf --source en --target fr --service google --confirm-cloud --out outputs/pdf_translate
+python wow-pdf-translate-skill/scripts/pdf_translate.py input.pdf --source en --target fr --service google --confirm-cloud --out outputs/pdf_translate
 ```
 
 For local package testing only:
 
 ```bash
-python do-you-want-translate-pdf-file-skill/scripts/pdf_translate.py input.pdf --engine mock --source en --target fr --service mock-local --out outputs/pdf_translate
+python wow-pdf-translate-skill/scripts/pdf_translate.py input.pdf --engine mock --source en --target fr --service mock-local --out outputs/pdf_translate
 ```
 
 ### 5. Validate Output
@@ -102,7 +102,7 @@ python do-you-want-translate-pdf-file-skill/scripts/pdf_translate.py input.pdf -
 The helper runs validation. If validating an existing output:
 
 ```bash
-python do-you-want-translate-pdf-file-skill/scripts/validate_outputs.py --source source.pdf --final translated-fr.pdf --run-dir outputs/pdf_translate/run-id
+python wow-pdf-translate-skill/scripts/validate_outputs.py --source source.pdf --final translated-fr.pdf --run-dir outputs/pdf_translate/run-id
 ```
 
 ## Done When

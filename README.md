@@ -1,4 +1,4 @@
-# do-you-want-translate-pdf-file-skill
+# wow-pdf-translate-skill
 
 [KOREAN](README.ko.md)
 
@@ -22,7 +22,7 @@ Agent skill for translating PDFs while preserving layout as much as the selected
 Ask your agent:
 
 ```text
-Set up the AIKONG2024/do-you-want-translate-pdf-file-skill skill.
+Set up the AIKONG2024/wow-pdf-translate-skill skill.
 ```
 
 ### Agent
@@ -30,33 +30,33 @@ Set up the AIKONG2024/do-you-want-translate-pdf-file-skill skill.
 <details>
 <summary>Open install instructions</summary>
 
-Read this repository and install the `do-you-want-translate-pdf-file-skill` skill into the skill directory used by the current agent runtime.
+Read this repository and install the `wow-pdf-translate-skill` skill into the skill directory used by the current agent runtime.
 
 The skill folder to install is:
 
 ```text
-do-you-want-translate-pdf-file-skill/
+wow-pdf-translate-skill/
 ```
 
 The installed skill must include:
 
 ```text
-do-you-want-translate-pdf-file-skill/SKILL.md
-do-you-want-translate-pdf-file-skill/scripts/
-do-you-want-translate-pdf-file-skill/references/
-do-you-want-translate-pdf-file-skill/agents/
+wow-pdf-translate-skill/SKILL.md
+wow-pdf-translate-skill/scripts/
+wow-pdf-translate-skill/references/
+wow-pdf-translate-skill/agents/
 ```
 
 Use the installation method supported by the current runtime:
 
-- If the runtime supports GitHub skill installation, install `AIKONG2024/do-you-want-translate-pdf-file-skill` with path `do-you-want-translate-pdf-file-skill`.
+- If the runtime supports GitHub skill installation, install `AIKONG2024/wow-pdf-translate-skill` with path `wow-pdf-translate-skill`.
 - If the runtime supports the `skills` CLI, use:
 
 ```bash
-npx --yes skills add https://github.com/AIKONG2024/do-you-want-translate-pdf-file-skill --all -g
+npx --yes skills add https://github.com/AIKONG2024/wow-pdf-translate-skill --all -g
 ```
 
-- If the runtime only supports manual local skills, copy the `do-you-want-translate-pdf-file-skill/` folder into that runtime's skill directory.
+- If the runtime only supports manual local skills, copy the `wow-pdf-translate-skill/` folder into that runtime's skill directory.
 
 After installing the skill, check the runtime dependency:
 
