@@ -142,6 +142,9 @@ outputs/pdf_translate/<run-id>/
 translated-<target-lang>.pdf
 ```
 
-## 참고
+## 출처 및 라이선스
 
-- 스캔본 또는 이미지 기반 PDF는 먼저 OCR을 수행해야 하며, 그렇지 않으면 결과가 제한될 수 있습니다.
+- 기본 엔진: [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate)의 공식 `pdf2zh` CLI.
+- PDFMathTranslate는 PDF 번역 시 원본 형식 보존을 목표로 하며 Google, DeepL, Ollama, OpenAI 등 여러 번역 서비스를 지원합니다.
+- upstream `pdf2zh` 패키지는 PDFMathTranslate의 `pyproject.toml`에서 `AGPL-3.0` 라이선스로 선언되어 있고, upstream 저장소에는 AGPL-3.0 라이선스가 포함되어 있습니다.
+- 이 skill 저장소는 MIT 라이선스이며 PDFMathTranslate, BabelDOC, 모델 파일, wheel, 샘플 PDF를 포함하지 않습니다. 외부 `pdf2zh` CLI를 실행하고 검증하도록 에이전트를 안내합니다.

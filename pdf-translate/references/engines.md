@@ -12,6 +12,15 @@ The skill does not vendor PDFMathTranslate, BabelDOC, model files, wheels, or sa
 
 Current official `pdf2zh` releases may install runtime dependencies such as BabelDOC. This skill does not invoke the optional `--babeldoc` backend by default.
 
+## Upstream Attribution And License
+
+- Source: [PDFMathTranslate/PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate)
+- Upstream package: `pdf2zh`
+- Upstream license: `AGPL-3.0`
+- Skill repository license: MIT
+
+Keep the distinction clear: this repository provides agent instructions and helper scripts, while the PDF translation engine is the external upstream `pdf2zh` CLI.
+
 ## Supported Script Engines
 
 | Engine | Purpose | Public status |
@@ -36,4 +45,3 @@ translated-<target-lang>.pdf
 ```
 
 The script removes default bilingual output and temporary render PNGs unless debug behavior is explicitly added later.
-

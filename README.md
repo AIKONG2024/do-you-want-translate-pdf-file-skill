@@ -142,6 +142,9 @@ Final generated file:
 translated-<target-lang>.pdf
 ```
 
-## Notes
+## Attribution And License
 
-- For scanned/image-only PDFs, run OCR first or expect limited results.
+- Default engine: the official `pdf2zh` CLI from [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate).
+- PDFMathTranslate describes itself as a format-preserving PDF translation tool and supports providers such as Google, DeepL, Ollama, and OpenAI.
+- The upstream `pdf2zh` package is declared as `AGPL-3.0` in PDFMathTranslate's `pyproject.toml`, and the upstream repository includes the AGPL-3.0 license.
+- This skill repository is MIT licensed and does not vendor PDFMathTranslate, BabelDOC, model files, wheels, or sample PDFs. It only guides an agent to run and validate the external `pdf2zh` CLI.
