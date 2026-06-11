@@ -144,7 +144,6 @@ translated-<target-lang>.pdf
 
 ## 출처 및 라이선스
 
-- 기본 엔진: [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate)의 공식 `pdf2zh` CLI.
-- PDFMathTranslate는 PDF 번역 시 원본 형식 보존을 목표로 하며 Google, DeepL, Ollama, OpenAI 등 여러 번역 서비스를 지원합니다.
-- upstream `pdf2zh` 패키지는 PDFMathTranslate의 `pyproject.toml`에서 `AGPL-3.0` 라이선스로 선언되어 있고, upstream 저장소에는 AGPL-3.0 라이선스가 포함되어 있습니다.
-- 이 skill 저장소는 MIT 라이선스이며 PDFMathTranslate, BabelDOC, 모델 파일, wheel, 샘플 PDF를 포함하지 않습니다. 외부 `pdf2zh` CLI를 실행하고 검증하도록 에이전트를 안내합니다.
+이 스킬은 [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate)의 공식 `pdf2zh` CLI를 사용해 PDF 레이아웃 보존 번역을 수행합니다.
+
+PDFMathTranslate / `pdf2zh`는 `AGPL-3.0` 라이선스로 배포됩니다. 이 저장소는 해당 라이브러리나 모델 파일을 포함하지 않으며, 외부 `pdf2zh` CLI를 실행하도록 안내하는 MIT 라이선스 skill입니다.

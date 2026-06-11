@@ -14,12 +14,9 @@ Current official `pdf2zh` releases may install runtime dependencies such as Babe
 
 ## Upstream Attribution And License
 
-- Source: [PDFMathTranslate/PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate)
-- Upstream package: `pdf2zh`
-- Upstream license: `AGPL-3.0`
-- Skill repository license: MIT
+This skill uses the official `pdf2zh` CLI from [PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) to translate PDFs while preserving layout.
 
-Keep the distinction clear: this repository provides agent instructions and helper scripts, while the PDF translation engine is the external upstream `pdf2zh` CLI.
+PDFMathTranslate / `pdf2zh` is distributed under the `AGPL-3.0` license. This repository does not include that library or model files; it is an MIT-licensed skill that guides an agent to run the external `pdf2zh` CLI.
 
 ## Supported Script Engines
 
