@@ -1,6 +1,6 @@
 # wow-pdf-translate-skill
 
-[KOREAN](README.ko.md)
+[한국어](README.ko.md)
 
 Agent skill for translating PDFs while preserving layout as much as the selected engine allows.
 
