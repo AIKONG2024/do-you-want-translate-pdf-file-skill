@@ -71,9 +71,9 @@ If the runtime requires restart or reload to discover new skills, tell the user 
 
 ## Setup
 
-If you use a paid or keyed provider, set only the environment variables for that provider.
+Default provider is Google, so no API key is required for a basic run. Cloud providers can receive extracted PDF text, so your agent must ask for confirmation before running them.
 
-Common examples:
+For higher quality or local/private translation, choose a provider and set only that provider's environment variables.
 
 | Provider | Environment variables |
 | --- | --- |
@@ -83,15 +83,36 @@ Common examples:
 | Gemini | `GEMINI_API_KEY`, optional `GEMINI_MODEL` |
 | Ollama | `OLLAMA_HOST`, `OLLAMA_MODEL` |
 
+Examples:
+
+```powershell
+# Windows PowerShell
+$env:OPENAI_API_KEY="your-api-key"
+$env:OPENAI_MODEL="gpt-4o-mini"
+```
+
+```bash
+# macOS / Linux
+export OPENAI_API_KEY="your-api-key"
+export OPENAI_MODEL="gpt-4o-mini"
+```
+
+For Ollama local translation:
+
+```bash
+export OLLAMA_HOST="http://127.0.0.1:11434"
+export OLLAMA_MODEL="gemma2"
+```
+
 ## Use
 
 Ask your agent:
 
 ```text
-Translate this PDF to French while preserving layout: /path/to/paper.pdf
+Translate this PDF to Korean while preserving layout.
 ```
 
-The agent should confirm the source and target language. Before using a cloud translation provider, it must ask whether you approve sending extracted PDF text to that provider.
+Attach the PDF when you send the request. The agent should confirm the source and target language. Before using a cloud translation provider, it must ask whether you approve sending extracted PDF text to that provider.
 
 ## Output
 
@@ -103,7 +124,7 @@ outputs/pdf_translate/<run-id>/
 └── translation-summary.md
 ```
 
-The final file to use is:
+Final generated file:
 
 ```text
 translated-<target-lang>.pdf
@@ -111,8 +132,4 @@ translated-<target-lang>.pdf
 
 ## Notes
 
-- This skill does not vendor PDFMathTranslate, BabelDOC, models, wheels, or sample PDFs.
-- Current official `pdf2zh` releases may install upstream runtime dependencies such as BabelDOC.
-- This skill does not invoke the optional `--babeldoc` backend by default.
 - For scanned/image-only PDFs, run OCR first or expect limited results.
-- Detailed usage is in [docs/features/pdf-translate.md](docs/features/pdf-translate.md).

@@ -71,9 +71,9 @@ python -m pip install pdf2zh
 
 ## 설정
 
-유료 또는 API 키가 필요한 번역 서비스를 사용할 경우, 해당 서비스에 필요한 환경 변수만 설정하면 됩니다.
+기본 번역 서비스는 Google이므로 기본 실행에는 API 키가 필요하지 않습니다. 다만 클라우드 번역 서비스는 PDF에서 추출한 텍스트를 외부 제공자에게 보낼 수 있으므로, 실행 전에 에이전트가 사용자에게 확인해야 합니다.
 
-주요 예시:
+더 높은 번역 품질이나 로컬/비공개 번역을 원하면 provider를 선택하고, 해당 provider에 필요한 환경 변수만 설정하면 됩니다.
 
 | Provider | Environment variables |
 | --- | --- |
@@ -83,15 +83,36 @@ python -m pip install pdf2zh
 | Gemini | `GEMINI_API_KEY`, 선택적으로 `GEMINI_MODEL` |
 | Ollama | `OLLAMA_HOST`, `OLLAMA_MODEL` |
 
+예시:
+
+```powershell
+# Windows PowerShell
+$env:OPENAI_API_KEY="your-api-key"
+$env:OPENAI_MODEL="gpt-4o-mini"
+```
+
+```bash
+# macOS / Linux
+export OPENAI_API_KEY="your-api-key"
+export OPENAI_MODEL="gpt-4o-mini"
+```
+
+Ollama 로컬 번역을 사용할 경우:
+
+```bash
+export OLLAMA_HOST="http://127.0.0.1:11434"
+export OLLAMA_MODEL="gemma2"
+```
+
 ## 사용
 
 에이전트에게 이렇게 요청하세요:
 
 ```text
-이 PDF를 프랑스어로 번역하고 레이아웃을 유지해줘: /path/to/paper.pdf
+이 PDF를 한국어로 번역하고 레이아웃을 유지해줘.
 ```
 
-에이전트는 원문 언어와 목표 언어를 확인해야 합니다. 클라우드 번역 서비스를 사용할 경우, PDF에서 추출한 텍스트를 해당 제공자에게 전송해도 되는지 먼저 확인해야 합니다.
+요청할 때 PDF를 첨부하세요. 에이전트는 원문 언어와 목표 언어를 확인해야 합니다. 클라우드 번역 서비스를 사용할 경우, PDF에서 추출한 텍스트를 해당 제공자에게 전송해도 되는지 먼저 확인해야 합니다.
 
 ## 출력
 
@@ -103,7 +124,7 @@ outputs/pdf_translate/<run-id>/
 └── translation-summary.md
 ```
 
-사용할 최종 파일은 다음입니다:
+최종 생성 파일:
 
 ```text
 translated-<target-lang>.pdf
@@ -111,8 +132,4 @@ translated-<target-lang>.pdf
 
 ## 참고
 
-- 이 스킬은 PDFMathTranslate, BabelDOC, 모델, wheel, 샘플 PDF를 저장소에 포함하지 않습니다.
-- 현재 공식 `pdf2zh` 릴리스는 BabelDOC 같은 upstream 런타임 의존성을 설치할 수 있습니다.
-- 이 스킬은 기본적으로 선택 기능인 `--babeldoc` 백엔드를 호출하지 않습니다.
 - 스캔본 또는 이미지 기반 PDF는 먼저 OCR을 수행해야 하며, 그렇지 않으면 결과가 제한될 수 있습니다.
-- 자세한 사용법은 [docs/features/pdf-translate.md](docs/features/pdf-translate.md)에 있습니다.
