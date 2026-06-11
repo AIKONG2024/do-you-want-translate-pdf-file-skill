@@ -75,13 +75,25 @@ Default provider is Google, so no API key is required for a basic run. Cloud pro
 
 For higher quality or local/private translation, choose a provider and set only that provider's environment variables.
 
-| Provider | Environment variables |
-| --- | --- |
-| Google | None |
-| DeepL | `DEEPL_AUTH_KEY` |
-| OpenAI | `OPENAI_API_KEY`, optional `OPENAI_MODEL` |
-| Gemini | `GEMINI_API_KEY`, optional `GEMINI_MODEL` |
-| Ollama | `OLLAMA_HOST`, `OLLAMA_MODEL` |
+| Provider | Service | Environment variables |
+| --- | --- | --- |
+| Google | `google` | None |
+| Bing | `bing` | None |
+| DeepL | `deepl` | `DEEPL_AUTH_KEY` |
+| DeepLX | `deeplx` | `DEEPLX_ENDPOINT` |
+| Ollama | `ollama` | `OLLAMA_HOST`, `OLLAMA_MODEL` |
+| OpenAI | `openai` | `OPENAI_API_KEY`, optional `OPENAI_BASE_URL`, `OPENAI_MODEL`, `OPENAI_STOP_TOKENS`, `OPENAI_MAX_TOKENS` |
+| Azure OpenAI | `azure-openai` | `AZURE_OPENAI_BASE_URL`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_MODEL` |
+| Gemini | `gemini` | `GEMINI_API_KEY`, optional `GEMINI_MODEL` |
+| Azure Translator | `azure` | `AZURE_ENDPOINT`, `AZURE_API_KEY` |
+| Tencent | `tencent` | `TENCENTCLOUD_SECRET_ID`, `TENCENTCLOUD_SECRET_KEY` |
+| Dify | `dify` | `DIFY_API_URL`, `DIFY_API_KEY` |
+| AnythingLLM | `anythingllm` | `AnythingLLM_URL`, `AnythingLLM_APIKEY` |
+| Argos Translate | `argos` | Argos language packages |
+| Grok | `grok` | `GORK_API_KEY`, `GORK_MODEL` |
+| DeepSeek | `deepseek` | `DEEPSEEK_API_KEY`, `DEEPSEEK_MODEL` |
+| MiniMax | `minimax` | `MINIMAX_API_KEY`, `MINIMAX_MODEL` |
+| OpenAI-compatible | `openailiked` | `OPENAILIKED_BASE_URL`, `OPENAILIKED_API_KEY`, `OPENAILIKED_MODEL`, optional `OPENAILIKED_STOP_TOKENS`, `OPENAILIKED_MAX_TOKENS` |
 
 Examples:
 

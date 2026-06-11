@@ -75,13 +75,25 @@ python -m pip install pdf2zh
 
 더 높은 번역 품질이나 로컬/비공개 번역을 원하면 provider를 선택하고, 해당 provider에 필요한 환경 변수만 설정하면 됩니다.
 
-| Provider | Environment variables |
-| --- | --- |
-| Google | 없음 |
-| DeepL | `DEEPL_AUTH_KEY` |
-| OpenAI | `OPENAI_API_KEY`, 선택적으로 `OPENAI_MODEL` |
-| Gemini | `GEMINI_API_KEY`, 선택적으로 `GEMINI_MODEL` |
-| Ollama | `OLLAMA_HOST`, `OLLAMA_MODEL` |
+| Provider | Service | Environment variables |
+| --- | --- | --- |
+| Google | `google` | 없음 |
+| Bing | `bing` | 없음 |
+| DeepL | `deepl` | `DEEPL_AUTH_KEY` |
+| DeepLX | `deeplx` | `DEEPLX_ENDPOINT` |
+| Ollama | `ollama` | `OLLAMA_HOST`, `OLLAMA_MODEL` |
+| OpenAI | `openai` | `OPENAI_API_KEY`, 선택적으로 `OPENAI_BASE_URL`, `OPENAI_MODEL`, `OPENAI_STOP_TOKENS`, `OPENAI_MAX_TOKENS` |
+| Azure OpenAI | `azure-openai` | `AZURE_OPENAI_BASE_URL`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_MODEL` |
+| Gemini | `gemini` | `GEMINI_API_KEY`, 선택적으로 `GEMINI_MODEL` |
+| Azure Translator | `azure` | `AZURE_ENDPOINT`, `AZURE_API_KEY` |
+| Tencent | `tencent` | `TENCENTCLOUD_SECRET_ID`, `TENCENTCLOUD_SECRET_KEY` |
+| Dify | `dify` | `DIFY_API_URL`, `DIFY_API_KEY` |
+| AnythingLLM | `anythingllm` | `AnythingLLM_URL`, `AnythingLLM_APIKEY` |
+| Argos Translate | `argos` | Argos language packages |
+| Grok | `grok` | `GORK_API_KEY`, `GORK_MODEL` |
+| DeepSeek | `deepseek` | `DEEPSEEK_API_KEY`, `DEEPSEEK_MODEL` |
+| MiniMax | `minimax` | `MINIMAX_API_KEY`, `MINIMAX_MODEL` |
+| OpenAI-compatible | `openailiked` | `OPENAILIKED_BASE_URL`, `OPENAILIKED_API_KEY`, `OPENAILIKED_MODEL`, 선택적으로 `OPENAILIKED_STOP_TOKENS`, `OPENAILIKED_MAX_TOKENS` |
 
 예시:
 

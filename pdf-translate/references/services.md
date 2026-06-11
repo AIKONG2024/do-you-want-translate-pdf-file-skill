@@ -14,14 +14,17 @@ These services may send extracted PDF text to an external provider:
 | `bing` | None |
 | `deepl` | `DEEPL_AUTH_KEY` |
 | `deeplx` | `DEEPLX_ENDPOINT` |
-| `openai` | `OPENAI_API_KEY`, optionally `OPENAI_BASE_URL`, `OPENAI_MODEL` |
+| `openai` | `OPENAI_API_KEY`, optionally `OPENAI_BASE_URL`, `OPENAI_MODEL`, `OPENAI_STOP_TOKENS`, `OPENAI_MAX_TOKENS` |
 | `azure-openai` | `AZURE_OPENAI_BASE_URL`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_MODEL` |
 | `gemini` | `GEMINI_API_KEY`, optionally `GEMINI_MODEL` |
 | `azure` | `AZURE_ENDPOINT`, `AZURE_API_KEY` |
 | `tencent` | `TENCENTCLOUD_SECRET_ID`, `TENCENTCLOUD_SECRET_KEY` |
 | `dify` | `DIFY_API_URL`, `DIFY_API_KEY` |
 | `anythingllm` | `AnythingLLM_URL`, `AnythingLLM_APIKEY` |
-| `openailiked` | `OPENAILIKED_BASE_URL`, `OPENAILIKED_API_KEY`, `OPENAILIKED_MODEL` |
+| `grok` | `GORK_API_KEY`, `GORK_MODEL` |
+| `deepseek` | `DEEPSEEK_API_KEY`, `DEEPSEEK_MODEL` |
+| `minimax` | `MINIMAX_API_KEY`, `MINIMAX_MODEL` |
+| `openailiked` | `OPENAILIKED_BASE_URL`, `OPENAILIKED_API_KEY`, `OPENAILIKED_MODEL`, optionally `OPENAILIKED_STOP_TOKENS`, `OPENAILIKED_MAX_TOKENS` |
 
 Before any cloud service runs, get explicit user confirmation.
 
@@ -37,4 +40,3 @@ Local options still need setup validation, but they do not need the cloud-transf
 ## Language Codes
 
 Use provider-compatible short codes such as `en`, `fr`, `de`, `es`, `ja`, `ko`, and `zh`. Provider support is service-specific, so do not present a fixed language-pair list as exhaustive.
-
