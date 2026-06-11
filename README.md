@@ -17,7 +17,7 @@ Agent skill for translating PDFs while preserving layout as much as the selected
 Ask your agent:
 
 ```text
-AIKONG2024/pdf-translate-skill 스킬 설정해줘
+Set up the AIKONG2024/pdf-translate-skill skill.
 ```
 
 ### Agent

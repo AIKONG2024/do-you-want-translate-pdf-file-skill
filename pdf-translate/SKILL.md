@@ -14,7 +14,7 @@ The skill handles language confirmation, provider setup, cloud-transfer confirma
 ## When To Use
 
 - "Translate this PDF to English while preserving layout."
-- "PDF 논문을 한국어로 번역해서 PDF로 줘."
+- "Translate this PDF paper to Korean and provide the final PDF."
 - "Translate `/path/to/file.pdf` to Japanese."
 - "Keep the PDF layout and only provide the translated PDF."
 
